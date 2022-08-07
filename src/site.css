@@ -1,8 +1,109 @@
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    background: red;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3%;
+  place-content: center;
+  background: rgb(60, 60, 60);
+  height: 100vh;
+  padding: 3%;
+  font-size: 16px;
+}
+div {
+  display: grid;
+  background: white;
+}
+.box {
+  outline: solid 1px black;
+  display: grid;
+  place-content: center;
+  background: white;
+  font-size: 2em;
+}
+.box:nth-of-type(1) {
+  grid-area: a;
+  background: pink;
+}
+.box:nth-of-type(1)::after {
+  content: "A";
+}
+.box:nth-of-type(2) {
+  grid-area: b;
+  background: cyan;
+}
+.box:nth-of-type(2)::after {
+  content: "B";
+}
+.box:nth-of-type(3) {
+  grid-area: c;
+  background: gold;
+}
+.box:nth-of-type(3)::after {
+  content: "C";
+}
+.box:nth-of-type(4) {
+  grid-area: d;
+  background: lime;
+}
+.box:nth-of-type(4)::after {
+  content: "D";
+}
+.box:nth-of-type(5) {
+  grid-area: e;
+  background: red;
+}
+.box:nth-of-type(5)::after {
+  content: "E";
+}
+.box:nth-of-type(6) {
+  grid-area: f;
+  background: blue;
+  color: white;
+}
+.box:nth-of-type(6)::after {
+  content: "F";
+}
+#layout1 {
+  grid-template-areas: "a b b b b c";
+}
+#layout2 {
+  grid-template-areas:
+    "a"
+    "b"
+    "b"
+    "b"
+    "b"
+    "c";
+}
+#layout3 {
+  grid-template-areas:
+    "a a b"
+    "a a c"
+    "a a d";
+}
+#layout4 {
+  grid-template-areas:
+    "b c d"
+    "a a e"
+    "a a f";
+}
+#layout5 {
+  grid-template-areas:
+    "a a a"
+    "b b c"
+    "b b c"
+    "b b c"
+    "d d d";
+}
+#layout6 {
+  grid-template-areas:
+  "a a b c"
+  "d . b c"
+  "d . b f"
+  "d e e f";
 }

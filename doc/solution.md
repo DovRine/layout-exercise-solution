@@ -60,3 +60,69 @@ emmet to save a lot of time and keystrokes as well.
    git add -A
    git commit -m 'initial commit'
 ```
+
+### Style the <body> and commit
+   
+   ![style the body](img/style-the-body.gif)
+
+
+### Create Reusable Pieces
+1. default all divs to be display: grid with a white background so that grid holes are visible
+
+
+
+2. create a box class that centers its own contents, has a default background,  and has an outline
+
+   Note: use outline instead of border to prevent double borders
+
+3. create styles for specific child divs 1 through 6. We only create 6 because that's the most that any of these layouts need.
+
+![create css foundation](img/create-css-foundation.gif)
+
+### Create Layout1
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 1](img/create-layout-1.gif)
+
+### Create Layout2
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 2](img/create-layout-2.gif)
+
+### Create Layout3
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 3](img/create-layout-3.gif)
+
+### Create Layout4
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 4](img/create-layout-4.gif)
+
+### Create Layout5
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 5](img/create-layout-5.gif)
+
+### Create Layout6
+
+1. HTML
+2. CSS
+3. Commit
+
+![create layout 6](img/create-layout-6.gif)
